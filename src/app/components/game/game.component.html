@@ -1,0 +1,18 @@
+<div id="game" (keyup)="onKey($event)">
+    <div id="leftArrowBox"  class="arrowBox">
+        <p id="ArrowLeftIndicator" class="indicator {{leftIndicator?'active':''}}">🡄</p>
+        <p *ngFor="let i of leftArrows" class="flyingArrow">🡄</p>
+    </div>
+    <div id="UpArrowBox" class="arrowBox">
+        <p id="ArrowUpindicator" class="indicator {{upIndicator?'active':''}}">🡅</p>
+        <p *ngFor="let i of upArrows" class="flyingArrow">🡅</p>
+    </div>
+    <div id="DownArrowBox"  class="arrowBox">
+        <p id="ArrowDownindicator" class="indicator {{downIndicator?'active':''}}">🡇</p>
+        <p *ngFor="let i of downArrows" class="flyingArrow">🡇</p>
+    </div>
+    <div id="rightArrowBox" class="arrowBox">
+        <p id="ArrowRightindicator" class="indicator {{rightIndicator?'active':''}}">🡆</p>
+        <p *ngFor="let i of rightArrows" class="flyingArrow">🡆</p>
+    </div>
+</div>
